@@ -1,2 +1,4 @@
 **/token.json
 /out
+main.eng
+**/__pycache__

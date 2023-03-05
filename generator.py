@@ -14,6 +14,7 @@ if __name__ == "__main__":
     f = open('token.json')
     data = json.load(f)
     openai.api_key = data['key']
+    openai.organization = data['org']
     prompt = sys.argv[1:]
     print("introducing: " + prompt[0])
     print(generate_ino(prompt=prompt))

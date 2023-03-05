@@ -1,5 +1,5 @@
 **/token.json
 /out
 /main
-main.eng
+*.human
 **/__pycache__

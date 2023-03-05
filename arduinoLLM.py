@@ -2,10 +2,13 @@ import generator
 import sys
 import os
 
-OUT_FILE = "out/main.ino"
+OUT_FILE = "main/main.ino"
 
 if __name__ == "__main__":
     filename = sys.argv[1]
+    if not filename.endswith(".human"):
+        sys.exit("file must have the .human extension")
+
     input = open(filename, "r")
     prompt = input.read()
     input.close()

@@ -25,7 +25,7 @@ def generate_ino(prompt: str):
         "content": prompt
     }
 
-    print(userPrompt)
+    # print(userPrompt)
 
     return openai.ChatCompletion.create(
         model=MODEL,
@@ -37,5 +37,5 @@ def generate_ino(prompt: str):
 
 if __name__ == "__main__":
     prompt = sys.argv[1:]
-    print("introducing: " + prompt[0])
+    # print("introducing: " + prompt[0])
     print(generate_ino(prompt=prompt))

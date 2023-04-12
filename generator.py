@@ -1,7 +1,7 @@
 import sys
 import openai
 
-MODEL = "gpt-3.5-turbo"
+MODEL = "gpt-4-0314"
 
 SYS_ID = 'sysId'
 
@@ -32,7 +32,8 @@ def generate_ino(prompt: str):
         messages=[
             sysId,
             userPrompt
-        ]
+        ],
+        temperature = 0
     )
 
 if __name__ == "__main__":

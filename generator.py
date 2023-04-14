@@ -1,7 +1,7 @@
 import sys
 import openai
 
-MODEL = "gpt-4-0314"
+MODEL = "gpt-4"
 
 SYS_ID = 'sysId'
 
